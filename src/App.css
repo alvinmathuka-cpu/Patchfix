@@ -1,8 +1,36 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  min-height: 100vh;
   text-align: center;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #213547;
+}
+
+.dark-mode {
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.light-mode button,
+.light-mode select {
+  background-color: #f9f9f9;
+  color: #213547;
+}
+
+.dark-mode button,
+.dark-mode select {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
 }
 
 .logo {
